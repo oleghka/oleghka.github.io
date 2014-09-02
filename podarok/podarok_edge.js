@@ -102,7 +102,7 @@ var symbols = {
                 id: 'Text',
                 type: 'text',
                 rect: ['457px', '760px','auto','auto','auto', 'auto'],
-                text: "Чтобы запустить аимацию, нажми в любое место",
+                text: "Чтобы запустить анимацию, нажми в любое место",
                 align: "center",
                 font: ['Arial, Helvetica, sans-serif', 14, "rgba(254,49,0,1.00)", "normal", "none", ""]
             }],
@@ -114,18 +114,18 @@ var symbols = {
         "Base State": {
             "${_verPrav3}": [
                 ["style", "top", '75px'],
-                ["style", "background-position", [27,0], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "left", '1155px'],
                 ["style", "opacity", '1'],
                 ["style", "clip", [0,27,26,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
-                ["style", "left", '1155px']
+                ["style", "background-position", [27,0], {valueTemplate:'@@0@@px @@1@@px'} ]
             ],
             "${_Ellipse2}": [
                 ["style", "top", '55px'],
-                ["color", "background-color", 'rgba(252,202,0,1.00)'],
                 ["transform", "scaleY", '0'],
                 ["transform", "scaleX", '0'],
                 ["style", "opacity", '1'],
-                ["style", "left", '1092px']
+                ["style", "left", '1092px'],
+                ["color", "background-color", 'rgba(252,202,0,1.00)']
             ],
             "${_plashka}": [
                 ["style", "top", '36px'],
@@ -133,13 +133,11 @@ var symbols = {
                 ["style", "left", '836px'],
                 ["style", "background-position", [328.85546875,0], {valueTemplate:'@@0@@px @@1@@px'} ]
             ],
-            "${_Text}": [
-                ["style", "top", '760px'],
-                ["style", "text-align", 'center'],
-                ["color", "color", 'rgba(254,49,0,1.00)'],
-                ["style", "font-family", 'Arial, Helvetica, sans-serif'],
-                ["style", "left", '457px'],
-                ["style", "font-size", '14px']
+            "${_Stage}": [
+                ["color", "background-color", 'rgba(255,255,255,1)'],
+                ["style", "overflow", 'hidden'],
+                ["style", "height", '800px'],
+                ["style", "width", '1240px']
             ],
             "${_x}": [
                 ["style", "top", '55px'],
@@ -151,24 +149,25 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "top", '0px']
             ],
-            "${_mask2}": [
+            "${__05}": [
                 ["style", "top", '0px'],
                 ["style", "opacity", '1'],
-                ["style", "left", '1092px']
+                ["style", "left", '1128px']
             ],
             "${_verLev3}": [
                 ["style", "top", '83px'],
-                ["style", "background-position", [21,0], {valueTemplate:'@@0@@px @@1@@px'} ],
+                ["style", "left", '1137px'],
                 ["style", "opacity", '1'],
                 ["style", "clip", [0,21,20,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
-                ["style", "left", '1137px']
+                ["style", "background-position", [21,0], {valueTemplate:'@@0@@px @@1@@px'} ]
             ],
-            "${_verNiz}": [
-                ["style", "top", '93px'],
-                ["style", "background-position", [0,12], {valueTemplate:'@@0@@px @@1@@px'} ],
-                ["style", "opacity", '1'],
-                ["style", "clip", [0,83,12,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
-                ["style", "left", '1113px']
+            "${_Text}": [
+                ["style", "top", '760px'],
+                ["style", "text-align", 'center'],
+                ["color", "color", 'rgba(254,49,0,1.00)'],
+                ["style", "font-family", 'Arial, Helvetica, sans-serif'],
+                ["style", "left", '457px'],
+                ["style", "font-size", '14px']
             ],
             "${__04}": [
                 ["style", "top", '103px'],
@@ -181,16 +180,17 @@ var symbols = {
                 ["style", "opacity", '0'],
                 ["style", "left", '884px']
             ],
-            "${__05}": [
+            "${_verNiz}": [
+                ["style", "top", '93px'],
+                ["style", "left", '1113px'],
+                ["style", "opacity", '1'],
+                ["style", "clip", [0,83,12,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
+                ["style", "background-position", [0,12], {valueTemplate:'@@0@@px @@1@@px'} ]
+            ],
+            "${_mask2}": [
                 ["style", "top", '0px'],
                 ["style", "opacity", '1'],
-                ["style", "left", '1128px']
-            ],
-            "${_Stage}": [
-                ["color", "background-color", 'rgba(255,255,255,1)'],
-                ["style", "width", '1240px'],
-                ["style", "height", '800px'],
-                ["style", "overflow", 'hidden']
+                ["style", "left", '1092px']
             ]
         }
     },
