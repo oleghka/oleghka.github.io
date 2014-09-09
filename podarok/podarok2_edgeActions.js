@@ -21,11 +21,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${_x}", "click", function(sym, e) {
-         sym.play();
-
-      });
-      //Edge binding end
+      
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3333, function(sym, e) {
          // insert code here
@@ -41,7 +37,40 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${_Rectangle}", "mouseover", function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3734, function(sym, e) {
+         // insert code here
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      
+
+      Symbol.bindElementAction(compId, symbolName, "${_Ellipse2}", "mouseover", function(sym, e) {
+         // insert code to be run when the mouse hovers over the object
+         
+         sym.play();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_x2}", "mouseover", function(sym, e) {
+         // insert code to be run when the mouse hovers over the object
+         sym.play();
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_x2}", "click", function(sym, e) {
+         // insert code for mouse click here
+         sym.play();
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_Rectangle4}", "mouseover", function(sym, e) {
          // insert code to be run when the mouse hovers over the object
          sym.play();
          

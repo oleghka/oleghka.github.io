@@ -86,30 +86,24 @@ var symbols = {
                 fill: ["rgba(0,0,0,0)",im+"verNiz.png",'0px','0px']
             },
             {
-                id: 'Rectangle',
-                type: 'rect',
-                rect: ['855px', '55px','365px','128px','auto', 'auto'],
-                opacity: 0,
-                fill: ["rgba(252,202,0,1)"],
-                stroke: [0,"rgb(0, 0, 0)","none"]
-            },
-            {
                 id: 'text',
                 type: 'image',
                 rect: ['884px', '82px','190px','73px','auto', 'auto'],
                 fill: ["rgba(0,0,0,0)",im+"text.png",'0px','0px']
             },
             {
-                id: 'x',
-                type: 'image',
-                rect: ['1210px', '55px','10px','10px','auto', 'auto'],
-                cursor: ['pointer'],
-                fill: ["rgba(0,0,0,0)",im+"x.png",'0px','0px']
+                id: 'Rectangle4',
+                type: 'rect',
+                rect: ['855px', '55px','364px','128px','auto', 'auto'],
+                opacity: 0,
+                fill: ["rgba(252,202,0,1)"],
+                stroke: [0,"rgb(0, 0, 0)","none"]
             },
             {
                 id: 'x2',
                 type: 'image',
-                rect: ['1209', '36','14px','14px','auto', 'auto'],
+                rect: ['1206px', '55px','14px','14px','auto', 'auto'],
+                opacity: 0,
                 fill: ["rgba(0,0,0,0)",im+"x2.png",'0px','0px']
             },
             {
@@ -147,14 +141,6 @@ var symbols = {
                 ["style", "left", '836px'],
                 ["style", "background-position", [328.85546875,0], {valueTemplate:'@@0@@px @@1@@px'} ]
             ],
-            "${_x}": [
-                ["style", "top", '55px'],
-                ["transform", "scaleY", '0'],
-                ["transform", "scaleX", '0'],
-                ["style", "opacity", '0'],
-                ["style", "cursor", 'pointer'],
-                ["style", "left", '1210px']
-            ],
             "${_verLev3}": [
                 ["style", "top", '83px'],
                 ["style", "background-position", [21,0], {valueTemplate:'@@0@@px @@1@@px'} ],
@@ -162,17 +148,22 @@ var symbols = {
                 ["style", "clip", [0,21,20,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
                 ["style", "left", '1137px']
             ],
-            "${_Rectangle}": [
-                ["style", "opacity", '0'],
-                ["style", "left", '855px'],
-                ["style", "width", '365px']
-            ],
             "${_verNiz}": [
                 ["style", "top", '93px'],
                 ["style", "background-position", [0,12], {valueTemplate:'@@0@@px @@1@@px'} ],
                 ["style", "opacity", '1'],
                 ["style", "clip", [0,83,12,0], {valueTemplate:'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'} ],
                 ["style", "left", '1113px']
+            ],
+            "${_Rectangle4}": [
+                ["style", "top", '55px'],
+                ["style", "opacity", '0'],
+                ["style", "height", '128px']
+            ],
+            "${_mask2}": [
+                ["style", "top", '0px'],
+                ["style", "opacity", '1'],
+                ["style", "left", '1092px']
             ],
             "${_bg}": [
                 ["style", "left", '0px'],
@@ -186,10 +177,12 @@ var symbols = {
                 ["style", "left", '457px'],
                 ["style", "font-size", '14px']
             ],
-            "${_mask2}": [
-                ["style", "top", '0px'],
-                ["style", "opacity", '1'],
-                ["style", "left", '1092px']
+            "${_x2}": [
+                ["style", "top", '55px'],
+                ["transform", "scaleY", '0'],
+                ["transform", "scaleX", '0'],
+                ["style", "opacity", '0.000000'],
+                ["style", "left", '1206px']
             ],
             "${_Stage}": [
                 ["color", "background-color", 'rgba(255,255,255,1)'],
@@ -241,6 +234,9 @@ var symbols = {
                 { id: "eid173", tween: [ "style", "${_verLev3}", "background-position", [-294,0], { valueTemplate: '@@0@@px @@1@@px', fromValue: [-273,0]}], position: 2233, duration: 0 },
                 { id: "eid174", tween: [ "style", "${_verLev3}", "background-position", [-315,0], { valueTemplate: '@@0@@px @@1@@px', fromValue: [-294,0]}], position: 2267, duration: 0 },
                 { id: "eid175", tween: [ "style", "${_verLev3}", "background-position", [-336,0], { valueTemplate: '@@0@@px @@1@@px', fromValue: [-315,0]}], position: 2300, duration: 0 },
+                { id: "eid279", tween: [ "style", "${_x2}", "opacity", '1', { fromValue: '0.000000'}], position: 3332, duration: 235 },
+                { id: "eid286", tween: [ "style", "${_x2}", "opacity", '1', { fromValue: '1'}], position: 3567, duration: 0 },
+                { id: "eid287", tween: [ "style", "${_x2}", "opacity", '0', { fromValue: '1'}], position: 3734, duration: 166 },
                 { id: "eid3", tween: [ "style", "${__05}", "top", '103px', { fromValue: '0px'}], position: 500, duration: 1000, easing: "easeOutBounce" },
                 { id: "eid259", tween: [ "style", "${__04}", "opacity", '0', { fromValue: '1'}], position: 3900, duration: 167 },
                 { id: "eid257", tween: [ "style", "${_verLev3}", "opacity", '0', { fromValue: '1'}], position: 3900, duration: 167 },
@@ -267,13 +263,14 @@ var symbols = {
                 { id: "eid132", tween: [ "style", "${_verPrav3}", "background-position", [-513,0], { valueTemplate: '@@0@@px @@1@@px', fromValue: [-486,0]}], position: 2400, duration: 0 },
                 { id: "eid258", tween: [ "style", "${_verPrav3}", "opacity", '0', { fromValue: '1'}], position: 3900, duration: 167 },
                 { id: "eid260", tween: [ "style", "${__05}", "opacity", '0', { fromValue: '1'}], position: 3900, duration: 167 },
-                { id: "eid212", tween: [ "style", "${_x}", "opacity", '1', { fromValue: '0'}], position: 3332, duration: 234 },
                 { id: "eid253", tween: [ "style", "${_Ellipse2}", "opacity", '0', { fromValue: '1'}], position: 3900, duration: 167 },
-                { id: "eid272", tween: [ "transform", "${_x}", "scaleX", '1', { fromValue: '0'}], position: 3333, duration: 233 },
-                { id: "eid275", tween: [ "transform", "${_x}", "scaleX", '1.2', { fromValue: '1'}], position: 3566, duration: 167 },
+                { id: "eid280", tween: [ "transform", "${_x2}", "scaleX", '0.8', { fromValue: '0'}], position: 3332, duration: 235 },
+                { id: "eid282", tween: [ "transform", "${_x2}", "scaleX", '1', { fromValue: '0.8'}], position: 3567, duration: 167 },
+                { id: "eid284", tween: [ "transform", "${_x2}", "scaleX", '0', { fromValue: '1'}], position: 3734, duration: 166 },
+                { id: "eid281", tween: [ "transform", "${_x2}", "scaleY", '0.8', { fromValue: '0'}], position: 3332, duration: 235 },
+                { id: "eid283", tween: [ "transform", "${_x2}", "scaleY", '1', { fromValue: '0.8'}], position: 3567, duration: 167 },
+                { id: "eid285", tween: [ "transform", "${_x2}", "scaleY", '0', { fromValue: '1'}], position: 3734, duration: 166 },
                 { id: "eid254", tween: [ "style", "${_verNiz}", "opacity", '0', { fromValue: '1'}], position: 3900, duration: 167 },
-                { id: "eid273", tween: [ "transform", "${_x}", "scaleY", '1', { fromValue: '0'}], position: 3333, duration: 233 },
-                { id: "eid276", tween: [ "transform", "${_x}", "scaleY", '1.2', { fromValue: '1'}], position: 3566, duration: 167 },
                 { id: "eid188", tween: [ "style", "${_verNiz}", "background-position", [0,12], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,12]}], position: 1733, duration: 0 },
                 { id: "eid189", tween: [ "style", "${_verNiz}", "background-position", [0,0], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,12]}], position: 1767, duration: 0 },
                 { id: "eid190", tween: [ "style", "${_verNiz}", "background-position", [0,-12], { valueTemplate: '@@0@@px @@1@@px', fromValue: [0,0]}], position: 1800, duration: 0 },
