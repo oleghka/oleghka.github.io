@@ -1,0 +1,78 @@
+
+{
+
+	"HTMLFileName":"02.html",
+	"XProperty":"left",
+	"pref__general__AutoKeyframeProperties":"false",
+	"expanded:images/save_to_alpha.png":"nil",
+	"UseMotionPaths":"false",
+	"expanded:images/save_to_alpha3.png":"nil",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"StageZoomFactor":"100",
+	"stage-Default Timeline_mark_ms":"-1",
+	"viewStartMs":"-25",
+	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"TopUnits":"px",
+	"symbol_stage":{
+		"dummyStageParentWidth":"643px",
+		"dummyStageParentHeight":"149px",
+		"element_${save_to_alpha}":{
+			"timelineColor2":"0x4fa275",
+			"timelineColor3":"0x456a55",
+			"animationEnabled":"false",
+			"timelineColor":"0x50bd82"},
+		"element_${Rectangle3}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"},
+		"element_${save_to_alpha3}":{
+			"timelineColor2":"0x168c84",
+			"timelineColor3":"0x2a605c",
+			"animationEnabled":"true",
+			"timelineColor":"0x00a096"},
+		"defaultStageParentHeight":"149px",
+		"element_${save_to_alpha3Copy2}":{
+			"timelineColor2":"0x1095d2",
+			"animationEnabled":"true",
+			"timelineColor3":"0x29647e",
+			"timelineColor":"0x00a9fa"},
+		"element_${Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"defaultStageParentWidth":"643px",
+		"element_${save_to_alpha2}":{
+			"timelineColor2":"0x1aa38f",
+			"timelineColor3":"0x2a6a61",
+			"timelineColor":"0x00bda4"},
+		"element_${save_to_alpha3Copy}":{
+			"timelineColor2":"0x326a96",
+			"timelineColor3":"0x385063",
+			"timelineColor":"0x2f73ad"}},
+	"expanded:images/save_to_alpha2.png":"nil",
+	"CompZoomFactor":"100",
+	"viewStartY":"0",
+	"pixelsPerMs":"0.2",
+	"LeftUnits":"px",
+	"TransitionIdCounter":"21",
+	"usedBOM":"false",
+	"nextElementColorIndex":"8",
+	"stage-Default Timeline_playhead_ms":"1000",
+	"YProperty":"top",
+	"pref__general__GenerateSmoothTransitions":"false",
+	"ImgAutoWidthScale":"false"}
