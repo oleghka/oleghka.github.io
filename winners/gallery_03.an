@@ -22,7 +22,7 @@
 	"expanded:images/03.png":"nil",
 	"expanded:images/02.png":"nil",
 	"pref__general__FilterNonAnimatedElements":"false",
-	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"expanded:images/01.png":"nil",
 	"symbol_stage":{
 		"dummyStageParentWidth":"1000px",
@@ -67,7 +67,7 @@
 			"timelineColor3":"0x29647e",
 			"animationEnabled":"true",
 			"timelineColor":"0x00a9fa"}},
-	"TransitionIdCounter":"56",
+	"TransitionIdCounter":"66",
 	"CompZoomFactor":"100",
 	"viewStartY":"0",
 	"pixelsPerMs":"0.2",

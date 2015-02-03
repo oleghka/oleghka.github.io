@@ -37,7 +37,7 @@
                         {
                             id: '_02',
                             type: 'image',
-                            rect: ['638px', '323px', '444px', '298px', 'auto', 'auto'],
+                            rect: ['366px', '323px', '444px', '298px', 'auto', 'auto'],
                             clip: 'rect(0px 272px 272px 0px)',
                             opacity: '1',
                             fill: ["rgba(0,0,0,0)",im+"02.png",'-156.79296875px','0px']
@@ -45,7 +45,7 @@
                         {
                             id: '_03',
                             type: 'image',
-                            rect: ['774px', '323px', '610px', '381px', 'auto', 'auto'],
+                            rect: ['638px', '323px', '610px', '381px', 'auto', 'auto'],
                             clip: 'rect(0px 272px 272px 0px)',
                             opacity: '1',
                             fill: ["rgba(0,0,0,0)",im+"03.png",'-125.04687525px','-94.17578125px']
@@ -85,24 +85,14 @@
                     autoPlay: false,
                     data: [
                         [
-                            "eid27",
-                            "top",
+                            "eid54",
+                            "opacity",
                             0,
-                            0,
-                            "linear",
-                            "${_02}",
-                            '323px',
-                            '323px'
-                        ],
-                        [
-                            "eid28",
-                            "top",
                             500,
-                            0,
                             "linear",
-                            "${_02}",
-                            '323px',
-                            '323px'
+                            "${txt_02}",
+                            '1',
+                            '0'
                         ],
                         [
                             "eid55",
@@ -113,6 +103,49 @@
                             "${txt_03}",
                             '1',
                             '0'
+                        ],
+                        [
+                            "eid20",
+                            "background-position",
+                            0,
+                            500,
+                            "linear",
+                            "${_01}",
+                            [-176.171875,0],
+                            [-1.2578125,0],
+                            {valueTemplate: '@@0@@px @@1@@px'}
+                        ],
+                        [
+                            "eid3",
+                            "clip",
+                            0,
+                            500,
+                            "linear",
+                            "${_01}",
+                            [0,272,272,0],
+                            [0,544.30859375,272,0],
+                            {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
+                        ],
+                        [
+                            "eid7",
+                            "clip",
+                            0,
+                            500,
+                            "linear",
+                            "${_03}",
+                            [0,272,272,0],
+                            [0,136.0390625,272,0],
+                            {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
+                        ],
+                        [
+                            "eid53",
+                            "opacity",
+                            0,
+                            500,
+                            "linear",
+                            "${_03}",
+                            '1',
+                            '0.5'
                         ],
                         [
                             "eid21",
@@ -136,32 +169,12 @@
                             {valueTemplate: '@@0@@px @@1@@px'}
                         ],
                         [
-                            "eid54",
-                            "opacity",
-                            0,
-                            500,
-                            "linear",
-                            "${txt_02}",
-                            '1',
-                            '0'
-                        ],
-                        [
                             "eid52",
                             "opacity",
                             0,
                             500,
                             "linear",
                             "${_02}",
-                            '1',
-                            '0.5'
-                        ],
-                        [
-                            "eid53",
-                            "opacity",
-                            0,
-                            500,
-                            "linear",
-                            "${_03}",
                             '1',
                             '0.5'
                         ],
@@ -187,17 +200,6 @@
                             '550px'
                         ],
                         [
-                            "eid20",
-                            "background-position",
-                            0,
-                            500,
-                            "linear",
-                            "${_01}",
-                            [-176.171875,0],
-                            [-1.2578125,0],
-                            {valueTemplate: '@@0@@px @@1@@px'}
-                        ],
-                        [
                             "eid18",
                             "background-position",
                             0,
@@ -209,25 +211,24 @@
                             {valueTemplate: '@@0@@px @@1@@px'}
                         ],
                         [
-                            "eid3",
-                            "clip",
+                            "eid27",
+                            "top",
                             0,
-                            500,
+                            0,
                             "linear",
-                            "${_01}",
-                            [0,272,272,0],
-                            [0,544.30859375,272,0],
-                            {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
+                            "${_02}",
+                            '323px',
+                            '323px'
                         ],
                         [
-                            "eid9",
-                            "left",
-                            0,
+                            "eid28",
+                            "top",
                             500,
+                            0,
                             "linear",
-                            "${_03}",
-                            '638px',
-                            '774px'
+                            "${_02}",
+                            '323px',
+                            '323px'
                         ],
                         [
                             "eid15",
@@ -240,15 +241,14 @@
                             '638px'
                         ],
                         [
-                            "eid7",
-                            "clip",
+                            "eid9",
+                            "left",
                             0,
                             500,
                             "linear",
                             "${_03}",
-                            [0,272,272,0],
-                            [0,136.0390625,272,0],
-                            {valueTemplate: 'rect(@@0@@px @@1@@px @@2@@px @@3@@px)'}
+                            '638px',
+                            '774px'
                         ]
                     ]
                 }
