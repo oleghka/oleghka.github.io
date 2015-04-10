@@ -32,6 +32,17 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${grom2}", "touchstart", function(sym, e) {
+         // insert code to be run when the mouse hovers over the object
+         // Play an audio track 
+         sym.$("grom")[0].play();
+         
+         
+         
+
+      });
+      //Edge binding end
+
    })("stage");
    //Edge symbol end:'stage'
 
