@@ -39,14 +39,14 @@
                         {
                             id: 'grom2',
                             type: 'image',
-                            rect: ['431px', '157px', '73px', '85px', 'auto', 'auto'],
+                            rect: ['645px', '71px', '73px', '85px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"grom.png",'0px','0px']
                         },
                         {
                             id: 'Text2',
                             type: 'text',
-                            rect: ['43px', '176px', 'auto', 'auto', 'auto', 'auto'],
-                            text: "Разрази тебя гром",
+                            rect: ['80px', '90px', 'auto', 'auto', 'auto', 'auto'],
+                            text: "Люблю грозу в начале мая",
                             align: "left",
                             font: ['Verdana, Geneva, sans-serif', [40, "px"], "rgba(0,0,0,1)", "400", "none solid rgb(0, 0, 0)", "normal", "break-word", "nowrap"]
                         }
@@ -54,7 +54,7 @@
                     style: {
                         '${Stage}': {
                             isStage: true,
-                            rect: ['null', 'null', '550px', '400px', 'auto', 'auto'],
+                            rect: ['null', 'null', '1000px', '400px', 'auto', 'auto'],
                             overflow: 'hidden',
                             fill: ["rgba(255,255,255,1)"]
                         }
