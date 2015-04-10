@@ -54,7 +54,7 @@
                     style: {
                         '${Stage}': {
                             isStage: true,
-                            rect: [undefined, undefined, '550px', '400px'],
+                            rect: ['null', 'null', '550px', '400px', 'auto', 'auto'],
                             overflow: 'hidden',
                             fill: ["rgba(255,255,255,1)"]
                         }

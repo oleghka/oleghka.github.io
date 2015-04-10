@@ -35,6 +35,13 @@
 	"CompZoomFactor":"100",
 	"StageZoomFactor":"100",
 	"pixelsPerMs":"0.2",
+	"viewStartY":"0",
+	"mediagroup_media/grom.mp3":"grom",
+	"usedBOM":"false",
+	"nextElementColorIndex":"7",
+	"stage-Default Timeline_playhead_ms":"0",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"expanded:images/grom.png":"nil",
 	"ModelData":"{\
 \"stage\": {\
    \"timelines\": {\
@@ -49,11 +56,4 @@
    \"timelines\": {\
 \
    }}\
-}",
-	"expanded:images/grom.png":"nil",
-	"usedBOM":"false",
-	"nextElementColorIndex":"7",
-	"stage-Default Timeline_playhead_ms":"0",
-	"pref__general__FilterNonAnimatedElements":"false",
-	"mediagroup_media/grom.mp3":"grom",
-	"viewStartY":"0"}
+}"}
