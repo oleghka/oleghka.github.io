@@ -43,7 +43,7 @@
                     style: {
                         '${Stage}': {
                             isStage: true,
-                            rect: [undefined, undefined, '100%', '100%'],
+                            rect: ['null', 'null', '100%', '100%', 'auto', 'auto'],
                             overflow: 'hidden',
                             fill: ["rgba(219,219,219,1.00)"]
                         }
@@ -92,10 +92,10 @@
                             fill: ['rgba(0,0,0,0)', 'images/trubka.png', '0px', '0px']
                         },
                         {
-                            id: 'tel',
+                            id: 'tel3',
                             type: 'image',
-                            rect: ['8px', '9px', '90px', '53px', 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/tel.png', '0px', '0px']
+                            rect: ['6px', '9px', '90px', '53px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/tel3.png', '0px', '0px']
                         }
                     ],
                     style: {
@@ -109,46 +109,6 @@
                     duration: 1000,
                     autoPlay: true,
                     data: [
-                        [
-                            "eid39",
-                            "left",
-                            0,
-                            250,
-                            "easeOutBounce",
-                            "${tel}",
-                            '6px',
-                            '5px'
-                        ],
-                        [
-                            "eid42",
-                            "left",
-                            250,
-                            250,
-                            "easeOutBounce",
-                            "${tel}",
-                            '5px',
-                            '4px'
-                        ],
-                        [
-                            "eid40",
-                            "left",
-                            500,
-                            250,
-                            "easeOutBounce",
-                            "${tel}",
-                            '4px',
-                            '6px'
-                        ],
-                        [
-                            "eid41",
-                            "left",
-                            750,
-                            250,
-                            "easeOutBounce",
-                            "${tel}",
-                            '6px',
-                            '8px'
-                        ],
                         [
                             "eid33",
                             "rotateZ",
@@ -228,6 +188,46 @@
                             "${trubka}",
                             '-4px',
                             '0px'
+                        ],
+                        [
+                            "eid51",
+                            "left",
+                            0,
+                            250,
+                            "easeOutBounce",
+                            "${tel3}",
+                            '4px',
+                            '3px'
+                        ],
+                        [
+                            "eid52",
+                            "left",
+                            250,
+                            250,
+                            "easeOutBounce",
+                            "${tel3}",
+                            '3px',
+                            '2px'
+                        ],
+                        [
+                            "eid53",
+                            "left",
+                            500,
+                            250,
+                            "easeOutBounce",
+                            "${tel3}",
+                            '2px',
+                            '4px'
+                        ],
+                        [
+                            "eid54",
+                            "left",
+                            750,
+                            250,
+                            "easeOutBounce",
+                            "${tel3}",
+                            '4px',
+                            '6px'
                         ]
                     ]
                 }
