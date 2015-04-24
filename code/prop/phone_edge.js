@@ -86,21 +86,22 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '-4px', '101px', '34px', 'auto', 'auto'],
                             id: 'trubka',
                             type: 'image',
+                            rect: ['0px', '-4px', '101px', '34px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/trubka.png', '0px', '0px']
                         },
                         {
-                            rect: ['8px', '9px', '90px', '53px', 'auto', 'auto'],
-                            id: 'tel',
+                            id: 'nomer',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/tel.png', '0px', '0px']
+                            rect: ['-29px', '43px', '159px', '19px', 'auto', 'auto'],
+                            fill: ['rgba(0,0,0,0)', 'images/nomer.png', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '101px', '62px']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '101px', '62px']
                         }
                     }
                 },
@@ -108,46 +109,6 @@
                     duration: 1000,
                     autoPlay: true,
                     data: [
-                        [
-                            "eid39",
-                            "left",
-                            0,
-                            250,
-                            "easeOutBounce",
-                            "${tel}",
-                            '6px',
-                            '5px'
-                        ],
-                        [
-                            "eid42",
-                            "left",
-                            250,
-                            250,
-                            "easeOutBounce",
-                            "${tel}",
-                            '5px',
-                            '4px'
-                        ],
-                        [
-                            "eid40",
-                            "left",
-                            500,
-                            250,
-                            "easeOutBounce",
-                            "${tel}",
-                            '4px',
-                            '6px'
-                        ],
-                        [
-                            "eid41",
-                            "left",
-                            750,
-                            250,
-                            "easeOutBounce",
-                            "${tel}",
-                            '6px',
-                            '8px'
-                        ],
                         [
                             "eid33",
                             "rotateZ",
