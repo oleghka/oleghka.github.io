@@ -13,7 +13,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1000, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1500, function(sym, e) {
          // insert code here
          sym.play();
 
@@ -28,7 +28,7 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    //Edge symbol: 'body'
    (function(symbolName) {   
    
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1000, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1500, function(sym, e) {
          // insert code here
          sym.play();
 
@@ -52,5 +52,20 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
    })("shnurok");
    //Edge symbol end:'shnurok'
+
+   //=========================================================
+   
+   //Edge symbol: 'shnurochek'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 1500, function(sym, e) {
+         // insert code here
+         sym.play();
+
+      });
+      //Edge binding end
+
+   })("shnurochek");
+   //Edge symbol end:'shnurochek'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-29641885");
