@@ -28,6 +28,12 @@
                 content: {
                     dom: [
                         {
+                            id: 'poup',
+                            type: 'image',
+                            rect: ['131px', '99px', '288px', '416px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"poup.png",'0px','0px']
+                        },
+                        {
                             id: 'body',
                             symbolName: 'body',
                             type: 'rect',
@@ -49,9 +55,9 @@
                     style: {
                         '${Stage}': {
                             isStage: true,
-                            rect: [undefined, undefined, '100%', '100%'],
+                            rect: ['null', 'null', '100%', '100%', 'auto', 'auto'],
                             overflow: 'hidden',
-                            fill: ["rgba(255,255,255,1)"]
+                            fill: ["rgba(155,155,155,1.00)"]
                         }
                     }
                 },
@@ -180,6 +186,26 @@
                             '0deg'
                         ],
                         [
+                            "eid157",
+                            "top",
+                            250,
+                            0,
+                            "linear",
+                            "${shnurochek2}",
+                            '146px',
+                            '146px'
+                        ],
+                        [
+                            "eid156",
+                            "top",
+                            250,
+                            0,
+                            "linear",
+                            "${poup}",
+                            '99px',
+                            '99px'
+                        ],
+                        [
                             "eid13",
                             "left",
                             0,
@@ -252,29 +278,28 @@
                 content: {
                     dom: [
                         {
+                            rect: ['5px', '-14px', '70px', '64px', 'auto', 'auto'],
                             id: 'derghatel2',
                             type: 'image',
-                            rect: ['5px', '-14px', '70px', '64px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/derghatel2.png', '0px', '0px']
                         },
                         {
-                            rect: ['10px', '50px', '61px', '36px', 'auto', 'auto'],
+                            type: 'rect',
                             id: 'Rectangle2',
                             stroke: [0, 'rgb(0, 0, 0)', 'none'],
-                            type: 'rect',
+                            rect: ['10px', '50px', '61px', '36px', 'auto', 'auto'],
                             fill: ['rgba(255,255,255,1.00)']
                         },
                         {
+                            rect: ['-5px', '50px', '90px', '36px', 'auto', 'auto'],
                             id: 'phone2',
                             type: 'image',
-                            rect: ['-5px', '50px', '90px', '36px', 'auto', 'auto'],
                             fill: ['rgba(0,0,0,0)', 'images/phone2.png', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '80px', '86px']
+                            rect: [null, null, '80px', '86px']
                         }
                     }
                 },
@@ -335,17 +360,16 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '630px', '87px', 'auto', 'auto'],
-                            id: 'shnur',
                             type: 'image',
+                            id: 'shnur',
+                            rect: ['0px', '0px', '630px', '87px', 'auto', 'auto'],
                             clip: 'rect(0px 35px 87px 0px)',
                             fill: ['rgba(0,0,0,0)', 'images/shnur.png', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '630px', '87px']
+                            rect: [null, null, '630px', '87px']
                         }
                     }
                 },
@@ -564,17 +588,16 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '1740px', '100px', 'auto', 'auto'],
-                            id: 'shnurok2',
                             type: 'image',
+                            id: 'shnurok2',
+                            rect: ['0px', '0px', '1740px', '100px', 'auto', 'auto'],
                             clip: 'rect(0px 60px 100px 0px)',
                             fill: ['rgba(0,0,0,0)', 'images/shnurok.png', '-1080px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            isStage: 'true',
-                            rect: [undefined, undefined, '1740px', '100px']
+                            rect: [null, null, '1740px', '100px']
                         }
                     }
                 },
