@@ -1,0 +1,42 @@
+
+{
+
+	"expanded:media/%D0%A2%D1%80%D0%B0%D1%82%D0%B0_%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B8%D0%B8.mp4":"false",
+	"symbol_stage":{
+		"dummyStageParentWidth":"1000px",
+		"element_${Stage}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"timelineColor":"0xeedf79"},
+		"defaultStageParentWidth":"1000px",
+		"element_${__}":{
+			"timelineColor2":"0x81aa62",
+			"timelineColor3":"0x5b6c4d",
+			"timelineColor":"0x91c767"},
+		"defaultStageParentHeight":"732px",
+		"dummyStageParentHeight":"732px"},
+	"CompZoomFactor":"100",
+	"StageZoomFactor":"100",
+	"pixelsPerMs":"0.2",
+	"ModelData":"{\
+\"stage\": {\
+   \"timelines\": {\
+      \"Default Timeline\": {\
+      }\
+   }},\
+\"Preloader\": {\
+   \"timelines\": {\
+\
+   }},\
+\"Down-level\": {\
+   \"timelines\": {\
+\
+   }}\
+}",
+	"HTMLFileName":"energhy.html",
+	"usedBOM":"false",
+	"nextElementColorIndex":"3",
+	"stage-Default Timeline_playhead_ms":"0",
+	"pref__general__FilterNonAnimatedElements":"false",
+	"mediagroup_media/%D0%A2%D1%80%D0%B0%D1%82%D0%B0_%D1%8D%D0%BD%D0%B5%D1%80%D0%B3%D0%B8%D0%B8.mp4":"Трата_энергии",
+	"viewStartY":"0"}
