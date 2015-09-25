@@ -45,14 +45,16 @@
                             type: 'image',
                             rect: ['258px', '85px', '504px', '556px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"win.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"win.png",'0px','0px'],
+                            transform: [[],[],[],['1','0.21783']]
                         },
                         {
                             id: 'sup',
                             type: 'image',
                             rect: ['458px', '413px', '92px', '111px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"sup.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"sup.png",'0px','0px'],
+                            transform: [[],[],[],['0','0']]
                         },
                         {
                             id: 'strelk',
@@ -73,14 +75,16 @@
                             type: 'image',
                             rect: ['340px', '413px', '94px', '102px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"sahar.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"sahar.png",'0px','0px'],
+                            transform: [[],[],[],['0','0']]
                         },
                         {
                             id: 'pech',
                             type: 'image',
                             rect: ['582px', '409px', '94px', '94px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"pech.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"pech.png",'0px','0px'],
+                            transform: [[],[],[],['0','0']]
                         },
                         {
                             id: 'new',
@@ -101,35 +105,35 @@
                             type: 'image',
                             rect: ['546px', '187px', '71px', '64px', 'auto', 'auto'],
                             opacity: '1',
-                            fill: ["rgba(0,0,0,0)",im+"paper_right.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"paper_right.png",'-75.703125px','46.796875px']
                         },
                         {
                             id: 'paper_left',
                             type: 'image',
                             rect: ['406px', '187px', '71px', '64px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"paper_left.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"paper_left.png",'75.078125px','54.01171875px']
                         },
                         {
                             id: 'lent_right',
                             type: 'image',
                             rect: ['482px', '226px', '200px', '80px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"lent_right.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"lent_right.png",'-127.242188px','-31.128906px']
                         },
                         {
                             id: 'lent_left',
                             type: 'image',
                             rect: ['338px', '226px', '198px', '80px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"lent_left.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"lent_left.png",'129.8203125px','-27.625000px']
                         },
                         {
                             id: 'had',
                             type: 'image',
                             rect: ['450px', '143px', '119px', '108px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"had.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"had.png",'0.000000px','79.47265625px']
                         },
                         {
                             id: 'h2',
@@ -150,14 +154,16 @@
                             type: 'image',
                             rect: ['456px', '180px', '107px', '108px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"krug.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"krug.png",'0px','0px'],
+                            transform: [[],[],[],['0','0']]
                         },
                         {
                             id: '_5',
                             type: 'image',
-                            rect: ['490px', '208px', '39px', '52px', 'auto', 'auto'],
+                            rect: ['491px', '208px', '39px', '52px', 'auto', 'auto'],
                             opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"5.png",'0px','0px']
+                            fill: ["rgba(0,0,0,0)",im+"5.png",'0px','0px'],
+                            transform: [[],[],[],['0','0']]
                         }
                     ],
                     style: {
@@ -170,23 +176,196 @@
                     }
                 },
                 timeline: {
-                    duration: 4000,
-                    autoPlay: true,
+                    duration: 3000,
+                    autoPlay: false,
                     data: [
                         [
-                            "eid23",
+                            "eid18",
                             "opacity",
-                            3000,
+                            1000,
                             250,
                             "linear",
+                            "${_5}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid39",
+                            "background-position",
+                            750,
+                            250,
+                            "linear",
+                            "${lent_right}",
+                            [-127.2421875,-31.12890625],
+                            [0,0],
+                            {valueTemplate: '@@0@@px @@1@@px'}
+                        ],
+                        [
+                            "eid69",
+                            "scaleX",
+                            2000,
+                            250,
+                            "easeInOutBack",
                             "${sup}",
                             '0',
                             '1'
                         ],
                         [
+                            "eid52",
+                            "background-position",
+                            750,
+                            250,
+                            "linear",
+                            "${paper_right}",
+                            [-75.703125,46.796875],
+                            [0,0],
+                            {valueTemplate: '@@0@@px @@1@@px'}
+                        ],
+                        [
+                            "eid22",
+                            "opacity",
+                            1750,
+                            250,
+                            "easeInOutBack",
+                            "${sahar}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid20",
+                            "opacity",
+                            1250,
+                            250,
+                            "linear",
+                            "${light}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid76",
+                            "skewX",
+                            1097,
+                            0,
+                            "easeInOutBack",
+                            "${pech}",
+                            '-0.02deg',
+                            '-0.02deg'
+                        ],
+                        [
+                            "eid26",
+                            "opacity",
+                            2750,
+                            250,
+                            "linear",
+                            "${slose}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid29",
+                            "scaleX",
+                            500,
+                            250,
+                            "linear",
+                            "${krug}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid48",
+                            "background-position",
+                            750,
+                            250,
+                            "linear",
+                            "${had}",
+                            [0,79.47265625],
+                            [0,0],
+                            {valueTemplate: '@@0@@px @@1@@px'}
+                        ],
+                        [
+                            "eid27",
+                            "opacity",
+                            2750,
+                            250,
+                            "linear",
+                            "${button}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid60",
+                            "opacity",
+                            750,
+                            250,
+                            "linear",
+                            "${had}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid19",
+                            "opacity",
+                            1250,
+                            250,
+                            "linear",
+                            "${new}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid21",
+                            "opacity",
+                            1500,
+                            250,
+                            "linear",
+                            "${h2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid31",
+                            "scaleY",
+                            500,
+                            250,
+                            "linear",
+                            "${krug}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid11",
+                            "opacity",
+                            750,
+                            250,
+                            "linear",
+                            "${paper_left}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid24",
+                            "opacity",
+                            2250,
+                            250,
+                            "easeInOutBack",
+                            "${pech}",
+                            '0.00047637196257710457',
+                            '1'
+                        ],
+                        [
+                            "eid63",
+                            "skewX",
+                            0,
+                            0,
+                            "linear",
+                            "${_5}",
+                            '0.2deg',
+                            '0.2deg'
+                        ],
+                        [
                             "eid25",
                             "opacity",
-                            3500,
+                            2500,
                             250,
                             "linear",
                             "${strelk}",
@@ -194,22 +373,164 @@
                             '1'
                         ],
                         [
-                            "eid22",
-                            "opacity",
-                            2750,
+                            "eid54",
+                            "scaleX",
+                            1000,
                             250,
                             "linear",
-                            "${sahar}",
+                            "${_5}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid71",
+                            "scaleY",
+                            2000,
+                            250,
+                            "easeInOutBack",
+                            "${sup}",
                             '0',
                             '1'
                         ],
                         [
                             "eid17",
                             "opacity",
-                            1500,
+                            750,
                             250,
                             "linear",
                             "${paper_right}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid35",
+                            "background-position",
+                            750,
+                            250,
+                            "linear",
+                            "${lent_left}",
+                            [129.8203125,-27.625],
+                            [0,0],
+                            {valueTemplate: '@@0@@px @@1@@px'}
+                        ],
+                        [
+                            "eid67",
+                            "scaleY",
+                            1750,
+                            250,
+                            "easeInOutBack",
+                            "${sahar}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid65",
+                            "scaleX",
+                            1750,
+                            250,
+                            "easeInOutBack",
+                            "${sahar}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid56",
+                            "scaleY",
+                            1000,
+                            250,
+                            "linear",
+                            "${_5}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid75",
+                            "scaleY",
+                            2250,
+                            250,
+                            "easeInOutBack",
+                            "${pech}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid73",
+                            "scaleX",
+                            2250,
+                            250,
+                            "easeInOutBack",
+                            "${pech}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid23",
+                            "opacity",
+                            2000,
+                            250,
+                            "easeInOutBack",
+                            "${sup}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid62",
+                            "scaleY",
+                            250,
+                            250,
+                            "linear",
+                            "${win}",
+                            '0.21783',
+                            '1'
+                        ],
+                        [
+                            "eid7",
+                            "opacity",
+                            500,
+                            250,
+                            "linear",
+                            "${krug}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid58",
+                            "left",
+                            1000,
+                            250,
+                            "linear",
+                            "${_5}",
+                            '491px',
+                            '490px'
+                        ],
+                        [
+                            "eid5",
+                            "opacity",
+                            0,
+                            250,
+                            "linear",
+                            "${shadow}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid50",
+                            "background-position",
+                            750,
+                            250,
+                            "linear",
+                            "${paper_left}",
+                            [75.078125,54.01171875],
+                            [0,0],
+                            {valueTemplate: '@@0@@px @@1@@px'}
+                        ],
+                        [
+                            "eid43",
+                            "opacity",
+                            750,
+                            250,
+                            "linear",
+                            "${lent_right}",
                             '0',
                             '1'
                         ],
@@ -224,132 +545,12 @@
                             '1'
                         ],
                         [
-                            "eid26",
-                            "opacity",
-                            3750,
-                            250,
-                            "linear",
-                            "${slose}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid27",
-                            "opacity",
-                            3750,
-                            250,
-                            "linear",
-                            "${button}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid10",
-                            "opacity",
-                            1000,
-                            250,
-                            "linear",
-                            "${had}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid19",
-                            "opacity",
-                            2000,
-                            250,
-                            "linear",
-                            "${new}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid21",
-                            "opacity",
-                            2500,
-                            250,
-                            "linear",
-                            "${h2}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid18",
-                            "opacity",
-                            1750,
-                            250,
-                            "linear",
-                            "${_5}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid7",
-                            "opacity",
-                            500,
-                            250,
-                            "linear",
-                            "${krug}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid11",
-                            "opacity",
-                            1250,
-                            250,
-                            "linear",
-                            "${paper_left}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid5",
-                            "opacity",
-                            0,
-                            250,
-                            "linear",
-                            "${shadow}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid8",
+                            "eid44",
                             "opacity",
                             750,
                             250,
                             "linear",
                             "${lent_left}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid9",
-                            "opacity",
-                            750,
-                            250,
-                            "linear",
-                            "${lent_right}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid24",
-                            "opacity",
-                            3250,
-                            250,
-                            "linear",
-                            "${pech}",
-                            '0.00047637196257710457',
-                            '1'
-                        ],
-                        [
-                            "eid20",
-                            "opacity",
-                            2250,
-                            250,
-                            "linear",
-                            "${light}",
                             '0',
                             '1'
                         ]
