@@ -36,7 +36,7 @@
                         {
                             id: 'shadow',
                             type: 'image',
-                            rect: ['0px', '0px', '992px', '725px', 'auto', 'auto'],
+                            rect: ['0px', '2px', '992px', '725px', 'auto', 'auto'],
                             opacity: '0',
                             fill: ["rgba(0,0,0,0)",im+"shadow.png",'0px','0px']
                         },
@@ -49,21 +49,6 @@
                             transform: [[],[],[],['1','0.21783']]
                         },
                         {
-                            id: 'sup',
-                            type: 'image',
-                            rect: ['458px', '413px', '92px', '111px', 'auto', 'auto'],
-                            opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"sup.png",'0px','0px'],
-                            transform: [[],[],[],['0','0']]
-                        },
-                        {
-                            id: 'strelk',
-                            type: 'image',
-                            rect: ['273px', '409px', '483px', '74px', 'auto', 'auto'],
-                            opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"strelk.png",'0px','0px']
-                        },
-                        {
                             id: 'slose',
                             type: 'image',
                             rect: ['709px', '85px', '36px', '34px', 'auto', 'auto'],
@@ -71,20 +56,10 @@
                             fill: ["rgba(0,0,0,0)",im+"slose.png",'0px','0px']
                         },
                         {
-                            id: 'sahar',
-                            type: 'image',
-                            rect: ['340px', '413px', '94px', '102px', 'auto', 'auto'],
-                            opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"sahar.png",'0px','0px'],
-                            transform: [[],[],[],['0','0']]
-                        },
-                        {
-                            id: 'pech',
-                            type: 'image',
-                            rect: ['582px', '409px', '94px', '94px', 'auto', 'auto'],
-                            opacity: '0',
-                            fill: ["rgba(0,0,0,0)",im+"pech.png",'0px','0px'],
-                            transform: [[],[],[],['0','0']]
+                            id: 'items',
+                            symbolName: 'items',
+                            type: 'rect',
+                            rect: ['0', '0', '0', '0', 'auto', 'auto']
                         },
                         {
                             id: 'new',
@@ -164,6 +139,13 @@
                             opacity: '0',
                             fill: ["rgba(0,0,0,0)",im+"5.png",'0px','0px'],
                             transform: [[],[],[],['0','0']]
+                        },
+                        {
+                            id: 'strelk',
+                            type: 'image',
+                            rect: ['273px', '409px', '483px', '74px', 'auto', 'auto'],
+                            opacity: '0',
+                            fill: ["rgba(0,0,0,0)",im+"strelk.png",'0px','0px']
                         }
                     ],
                     style: {
@@ -180,16 +162,6 @@
                     autoPlay: false,
                     data: [
                         [
-                            "eid23",
-                            "opacity",
-                            2000,
-                            250,
-                            "easeInOutBack",
-                            "${sup}",
-                            '0',
-                            '1'
-                        ],
-                        [
                             "eid39",
                             "background-position",
                             750,
@@ -199,16 +171,6 @@
                             [-127.2421875,-31.12890625],
                             [0,0],
                             {valueTemplate: '@@0@@px @@1@@px'}
-                        ],
-                        [
-                            "eid69",
-                            "scaleX",
-                            2000,
-                            250,
-                            "easeInOutBack",
-                            "${sup}",
-                            '0',
-                            '1'
                         ],
                         [
                             "eid52",
@@ -222,16 +184,6 @@
                             {valueTemplate: '@@0@@px @@1@@px'}
                         ],
                         [
-                            "eid22",
-                            "opacity",
-                            1750,
-                            250,
-                            "easeInOutBack",
-                            "${sahar}",
-                            '0',
-                            '1'
-                        ],
-                        [
                             "eid20",
                             "opacity",
                             1250,
@@ -240,16 +192,6 @@
                             "${light}",
                             '0',
                             '1'
-                        ],
-                        [
-                            "eid76",
-                            "skewX",
-                            1097,
-                            0,
-                            "easeInOutBack",
-                            "${pech}",
-                            '-0.02deg',
-                            '-0.02deg'
                         ],
                         [
                             "eid26",
@@ -343,26 +285,6 @@
                             '1'
                         ],
                         [
-                            "eid24",
-                            "opacity",
-                            2250,
-                            250,
-                            "easeInOutBack",
-                            "${pech}",
-                            '0.00047637196257710457',
-                            '1'
-                        ],
-                        [
-                            "eid63",
-                            "skewX",
-                            0,
-                            0,
-                            "linear",
-                            "${_5}",
-                            '0.2deg',
-                            '0.2deg'
-                        ],
-                        [
                             "eid25",
                             "opacity",
                             2500,
@@ -377,18 +299,8 @@
                             "scaleX",
                             1000,
                             250,
-                            "linear",
-                            "${_5}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid71",
-                            "scaleY",
-                            2000,
-                            250,
                             "easeInOutBack",
-                            "${sup}",
+                            "${_5}",
                             '0',
                             '1'
                         ],
@@ -414,31 +326,21 @@
                             {valueTemplate: '@@0@@px @@1@@px'}
                         ],
                         [
-                            "eid67",
-                            "scaleY",
-                            1750,
-                            250,
-                            "easeInOutBack",
-                            "${sahar}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid65",
-                            "scaleX",
-                            1750,
-                            250,
-                            "easeInOutBack",
-                            "${sahar}",
-                            '0',
-                            '1'
-                        ],
-                        [
                             "eid56",
                             "scaleY",
                             1000,
                             250,
-                            "linear",
+                            "easeInOutBack",
+                            "${_5}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid18",
+                            "opacity",
+                            1000,
+                            250,
+                            "easeInOutBack",
                             "${_5}",
                             '0',
                             '1'
@@ -464,26 +366,6 @@
                             '1'
                         ],
                         [
-                            "eid75",
-                            "scaleY",
-                            2250,
-                            250,
-                            "easeInOutBack",
-                            "${pech}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid18",
-                            "opacity",
-                            1000,
-                            250,
-                            "linear",
-                            "${_5}",
-                            '0',
-                            '1'
-                        ],
-                        [
                             "eid7",
                             "opacity",
                             500,
@@ -498,7 +380,7 @@
                             "left",
                             1000,
                             250,
-                            "linear",
+                            "easeInOutBack",
                             "${_5}",
                             '491px',
                             '490px'
@@ -543,6 +425,368 @@
                             "${win}",
                             '0.21783',
                             '1'
+                        ]
+                    ]
+                }
+            },
+            "items": {
+                version: "6.0.0",
+                minimumCompatibleVersion: "5.0.0",
+                build: "6.0.0.400",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['458px', '413px', '92px', '111px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'sup',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/sup.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['340px', '406px', '94px', '102px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'sahar',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/sahar.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['343px', '412px', '94px', '94px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'pech',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/pech.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['713px', '412px', '94px', '94px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'pechCopy6',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/pech.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['343px', '412px', '94px', '94px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'pechCopy3',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/pech.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['592px', '417px', '92px', '111px', 'auto', 'auto'],
+                            id: 'supCopy2',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/sup.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['471px', '410px', '94px', '102px', 'auto', 'auto'],
+                            id: 'saharCopy3',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/sahar.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['587px', '412px', '94px', '94px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'pechCopy2',
+                            opacity: '0.00047637196257710457',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/pech.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['458px', '413px', '92px', '111px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'supCopy',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/sup.png', '0px', '0px']
+                        },
+                        {
+                            rect: ['340px', '406px', '94px', '102px', 'auto', 'auto'],
+                            transform: [[], [], [], ['0', '0']],
+                            id: 'saharCopy2',
+                            opacity: '0',
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/sahar.png', '0px', '0px']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '0px', '0px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 3250,
+                    autoPlay: false,
+                    data: [
+                        [
+                            "eid23",
+                            "opacity",
+                            2000,
+                            250,
+                            "easeInOutBack",
+                            "${sup}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid159",
+                            "opacity",
+                            2750,
+                            250,
+                            "easeInOutBack",
+                            "${sup}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid69",
+                            "scaleX",
+                            2000,
+                            250,
+                            "easeInOutBack",
+                            "${sup}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid160",
+                            "opacity",
+                            2750,
+                            250,
+                            "easeInOutBack",
+                            "${supCopy2}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid143",
+                            "left",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${sup}",
+                            '458px',
+                            '340px'
+                        ],
+                        [
+                            "eid157",
+                            "left",
+                            2750,
+                            250,
+                            "easeInOutBack",
+                            "${sup}",
+                            '340px',
+                            '222px'
+                        ],
+                        [
+                            "eid141",
+                            "left",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${pech}",
+                            '582px',
+                            '464px'
+                        ],
+                        [
+                            "eid156",
+                            "left",
+                            2750,
+                            250,
+                            "easeInOutBack",
+                            "${pech}",
+                            '464px',
+                            '343px'
+                        ],
+                        [
+                            "eid175",
+                            "left",
+                            3000,
+                            250,
+                            "easeInOutBack",
+                            "${pech}",
+                            '343px',
+                            '222px'
+                        ],
+                        [
+                            "eid140",
+                            "top",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${sahar}",
+                            '406px',
+                            '410px'
+                        ],
+                        [
+                            "eid22",
+                            "opacity",
+                            1750,
+                            250,
+                            "easeInOutBack",
+                            "${sahar}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid147",
+                            "opacity",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${sahar}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid173",
+                            "left",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${pechCopy6}",
+                            '582px',
+                            '464px'
+                        ],
+                        [
+                            "eid174",
+                            "left",
+                            2750,
+                            250,
+                            "easeInOutBack",
+                            "${pechCopy6}",
+                            '464px',
+                            '713px'
+                        ],
+                        [
+                            "eid178",
+                            "left",
+                            3000,
+                            250,
+                            "easeInOutBack",
+                            "${pechCopy6}",
+                            '713px',
+                            '592px'
+                        ],
+                        [
+                            "eid67",
+                            "scaleY",
+                            1750,
+                            250,
+                            "easeInOutBack",
+                            "${sahar}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid146",
+                            "top",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${saharCopy3}",
+                            '406px',
+                            '410px'
+                        ],
+                        [
+                            "eid144",
+                            "top",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${sup}",
+                            '413px',
+                            '417px'
+                        ],
+                        [
+                            "eid65",
+                            "scaleX",
+                            1750,
+                            250,
+                            "easeInOutBack",
+                            "${sahar}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid180",
+                            "opacity",
+                            3000,
+                            250,
+                            "easeInOutBack",
+                            "${pechCopy6}",
+                            '0.00047637196257710457',
+                            '1'
+                        ],
+                        [
+                            "eid137",
+                            "left",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${pechCopy2}",
+                            '952px',
+                            '834px'
+                        ],
+                        [
+                            "eid155",
+                            "left",
+                            2750,
+                            250,
+                            "easeInOutBack",
+                            "${pechCopy2}",
+                            '834px',
+                            '716px'
+                        ],
+                        [
+                            "eid75",
+                            "scaleY",
+                            2250,
+                            250,
+                            "easeInOutBack",
+                            "${pech}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid145",
+                            "left",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${saharCopy3}",
+                            '710px',
+                            '592px'
+                        ],
+                        [
+                            "eid158",
+                            "left",
+                            2750,
+                            250,
+                            "easeInOutBack",
+                            "${saharCopy3}",
+                            '592px',
+                            '471px'
+                        ],
+                        [
+                            "eid177",
+                            "left",
+                            3000,
+                            250,
+                            "easeInOutBack",
+                            "${saharCopy3}",
+                            '471px',
+                            '350px'
                         ],
                         [
                             "eid73",
@@ -553,6 +797,116 @@
                             "${pech}",
                             '0',
                             '1'
+                        ],
+                        [
+                            "eid71",
+                            "scaleY",
+                            2000,
+                            250,
+                            "easeInOutBack",
+                            "${sup}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid139",
+                            "left",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${sahar}",
+                            '340px',
+                            '222px'
+                        ],
+                        [
+                            "eid138",
+                            "top",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${pechCopy2}",
+                            '412px',
+                            '416px'
+                        ],
+                        [
+                            "eid136",
+                            "top",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${supCopy2}",
+                            '413px',
+                            '417px'
+                        ],
+                        [
+                            "eid135",
+                            "left",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${supCopy2}",
+                            '828px',
+                            '710px'
+                        ],
+                        [
+                            "eid154",
+                            "left",
+                            2750,
+                            250,
+                            "easeInOutBack",
+                            "${supCopy2}",
+                            '710px',
+                            '592px'
+                        ],
+                        [
+                            "eid176",
+                            "left",
+                            3000,
+                            250,
+                            "easeInOutBack",
+                            "${supCopy2}",
+                            '592px',
+                            '471px'
+                        ],
+                        [
+                            "eid142",
+                            "top",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${pech}",
+                            '412px',
+                            '416px'
+                        ],
+                        [
+                            "eid149",
+                            "opacity",
+                            2500,
+                            250,
+                            "easeInOutBack",
+                            "${saharCopy3}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid24",
+                            "opacity",
+                            2250,
+                            250,
+                            "easeInOutBack",
+                            "${pech}",
+                            '0.00047637196257710457',
+                            '1'
+                        ],
+                        [
+                            "eid179",
+                            "opacity",
+                            3000,
+                            250,
+                            "easeInOutBack",
+                            "${pech}",
+                            '1',
+                            '0'
                         ]
                     ]
                 }

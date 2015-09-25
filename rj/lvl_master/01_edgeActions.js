@@ -13,15 +13,70 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {
       
       
-      Symbol.bindElementAction(compId, symbolName, "${Stage}", "click", function(sym, e) {
+      
+
+      Symbol.bindElementAction(compId, symbolName, "${shadow}", "click", function(sym, e) {
          // insert code for mouse click here
          sym.play();
          
+         
+         sym.getSymbol("items").play();
+         
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3000, function(sym, e) {
+         // insert code here
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${strelk}", "click", function(sym, e) {
+         
+         sym.getSymbol("items").play();
 
       });
       //Edge binding end
 
    })("stage");
    //Edge symbol end:'stage'
+
+   //=========================================================
+   
+   //Edge symbol: 'items'
+   (function(symbolName) {   
+   
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2500, function(sym, e) {
+         // insert code here
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 2750, function(sym, e) {
+         // insert code here
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3000, function(sym, e) {
+         // insert code here
+         sym.stop();
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3250, function(sym, e) {
+         // insert code here
+         sym.stop();
+
+      });
+      //Edge binding end
+
+   })("items");
+   //Edge symbol end:'items'
 
 })(window.jQuery || AdobeEdge.$, AdobeEdge, "EDGE-627092852");
