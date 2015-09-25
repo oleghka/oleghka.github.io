@@ -23,7 +23,7 @@
                 minimumCompatibleVersion: "5.0.0",
                 build: "6.0.0.400",
                 scaleToFit: "none",
-                centerStage: "none",
+                centerStage: "horizontal",
                 resizeInstances: false,
                 content: {
                     dom: [
@@ -169,9 +169,9 @@
                     style: {
                         '${Stage}': {
                             isStage: true,
-                            rect: [undefined, undefined, '992px', '725px'],
+                            rect: ['null', 'null', '100%', '100%', 'auto', 'auto'],
                             overflow: 'hidden',
-                            fill: ["rgba(255,255,255,1)"]
+                            fill: ["rgba(0,0,0,1.00)"]
                         }
                     }
                 },
@@ -180,12 +180,12 @@
                     autoPlay: false,
                     data: [
                         [
-                            "eid18",
+                            "eid23",
                             "opacity",
-                            1000,
+                            2000,
                             250,
-                            "linear",
-                            "${_5}",
+                            "easeInOutBack",
+                            "${sup}",
                             '0',
                             '1'
                         ],
@@ -444,6 +444,26 @@
                             '1'
                         ],
                         [
+                            "eid44",
+                            "opacity",
+                            750,
+                            250,
+                            "linear",
+                            "${lent_left}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid6",
+                            "opacity",
+                            250,
+                            250,
+                            "linear",
+                            "${win}",
+                            '0',
+                            '1'
+                        ],
+                        [
                             "eid75",
                             "scaleY",
                             2250,
@@ -454,33 +474,13 @@
                             '1'
                         ],
                         [
-                            "eid73",
-                            "scaleX",
-                            2250,
-                            250,
-                            "easeInOutBack",
-                            "${pech}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid23",
+                            "eid18",
                             "opacity",
-                            2000,
-                            250,
-                            "easeInOutBack",
-                            "${sup}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid62",
-                            "scaleY",
-                            250,
+                            1000,
                             250,
                             "linear",
-                            "${win}",
-                            '0.21783',
+                            "${_5}",
+                            '0',
                             '1'
                         ],
                         [
@@ -535,22 +535,22 @@
                             '1'
                         ],
                         [
-                            "eid6",
-                            "opacity",
+                            "eid62",
+                            "scaleY",
                             250,
                             250,
                             "linear",
                             "${win}",
-                            '0',
+                            '0.21783',
                             '1'
                         ],
                         [
-                            "eid44",
-                            "opacity",
-                            750,
+                            "eid73",
+                            "scaleX",
+                            2250,
                             250,
-                            "linear",
-                            "${lent_left}",
+                            "easeInOutBack",
+                            "${pech}",
                             '0',
                             '1'
                         ]
