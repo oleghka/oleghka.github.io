@@ -31,7 +31,9 @@
                             id: 'bg',
                             type: 'image',
                             rect: ['0px', '0px', '1000px', '725px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"bg.png",'0px','0px']
+                            clip: 'rect(1.08203125px 1000px 725px 0px)',
+                            fill: ["rgba(0,0,0,0)",im+"bg.png",'0px','0px'],
+                            filter: [0, 0, 1, 1, 0, 0, 0, 10, "rgba(0,0,0,0)", 0, 0, 0]
                         },
                         {
                             id: 'shadow',
@@ -94,7 +96,7 @@
                     style: {
                         '${Stage}': {
                             isStage: true,
-                            rect: [undefined, undefined, '100%', '100%'],
+                            rect: ['null', 'null', '100%', '100%', 'auto', 'auto'],
                             overflow: 'hidden',
                             fill: ["rgba(0,0,0,1.00)"]
                         }
@@ -173,6 +175,16 @@
                             "${window}",
                             '0',
                             '1'
+                        ],
+                        [
+                            "eid56",
+                            "filter.blur",
+                            0,
+                            250,
+                            "linear",
+                            "${bg}",
+                            '0px',
+                            '10px'
                         ],
                         [
                             "eid8",
